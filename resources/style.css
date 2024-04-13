@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #F1F3F5;
+}
+
+/* Style for smaller screen (smaller than 992px) */
+.banner {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url(./images/Banner.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 236px;
+}
+
+.banner button {
+  font-size: 15px;
+  padding: 5px 9px;
+}
+
+.dropdown-btn {
+  background-color: #F1F3F5;
+  border: none;
+  border-radius: 5px;
+}
+
+#create-btn {
+  border: none;
+  background: none;
+  border-radius: 50%;
+  text-decoration: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+}
+
+.post-img1 {
+  background: url('/resources/images/post img 1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.post-img2 {
+  background: url('/resources/images/post img 2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.post-img3 {
+  background: url('/resources/images/post img 3.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.text-sm {
+  font-size: 13px;
+}
+
+.text-xs {
+  font-size: 11px;
+}
+
+.post-text,
+.views-text {
+  font-size: 13px;
+  color: #495057;
+}
+
+.custom-btn {
+  font-size: 15px;
+  background-color: #F1F3F5;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+
+.post-btn1 {
+  color: #E56135;
+  border: 1px solid #A9AEB8;
+  border-radius: 5px;
+}
+
+.post-btn2 {
+  color: #02B875;
+  border: 1px solid #A9AEB8;
+  border-radius: 5px;
+}
+
+.modal-form input {
+  border: none;
+  font-size: 14px;
+  padding: 10px;
+  background: none;
+  border: 1px solid transparent;
+}
+
+.modal-form input:focus {
+  border: 1px solid black;
+  background-color: white;
+}
+
+@media screen and (max-width:991px) {
+  .nav-lg {
+    display: none;
+  }
+
+  .heading-lg {
+    display: none;
+  }
+
+  .main-lg {
+    display: none;
+  }
+}
+
+/* Responsive design for bigger screens */
+
+@media screen and (min-width:992px) {
+  body {
+    background-color: #ffffff;
+  }
+
+  .nav-sm {
+    display: none;
+  }
+
+  #create-btn {
+    display: none;
+  }
+
+  .heading-sm {
+    display: none;
+  }
+
+  .main-sm {
+    display: none;
+  }
+
+  .nav-lg {
+    box-shadow: 0px 1px 2px 0px #0000001F;
+  }
+
+  .search-bar-div {
+    width: 360px;
+    background-color: #F2F2F2;
+  }
+
+  .search-bar-div>input:focus,
+  .location-input:focus {
+    outline: none;
+  }
+
+  .modal-form input {
+    font-size: 15px;
+  }
+
+  .text-sm {
+    font-size: 14px;
+  }
+
+  .modal-lg {
+    max-width: 736px;
+  }
+
+  .modal-msg {
+    background-color: #EFFFF4;
+    color: #008A45;
+  }
+
+  .close-form-btn {
+    top: -45px;
+    right: -15px;
+    cursor: pointer;
+  }
+
+  .banner {
+    height: 440px;
+  }
+
+  .heading-lg {
+    top: 290px;
+  }
+
+  .post-img1,
+  .post-img2,
+  .post-img3 {
+    height: 220px;
+
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .post-text {
+    font-size: 19px;
+  }
+
+  .post-heading {
+    font-size: 22px;
+  }
+
+  .nav2-lg {
+    position: sticky;
+    top: 59px;
+    background-color: white;
+    z-index: 10;
+  }
+
+  .edit-post-btn {
+    background-color: white;
+  }
+
+  .edit-post-btn:hover,
+  .edit-post-btn:focus {
+    background-color: #BFBFC0;
+  }
+
+  .follow-group-btn {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 13px;
+  }
+
+  .followed-btn {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .join-btn {
+    background-color: white;
+    border: 1px solid #989899;
+    border-radius: 0.375rem;
+    padding: 0 10px;
+    color: #989899;
+  }
+
+  #leave-grp-btn {
+    display: none;
+  }
+
+  #recommended-grp-div {
+    display: none;
+  }
+
+  #signed-in{
+    display: none;
+  }
+}
